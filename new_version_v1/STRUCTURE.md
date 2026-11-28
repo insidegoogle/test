@@ -112,3 +112,155 @@ new_version_v1/
 Варианты:
 1. Оставить отдельные файлы в папке `cl/` и научить программу их читать/склеивать
 2. Сделать один большой `bitcrack.cl` (проще для текущей сборки)
+
+
+
+
+|   .gitattributes
+|   .gitignore
+|   BitCrack.props
+|   BitCrack.sln
+|   LICENSE.MIT
+|   Makefile
+|   README.md
+|   Отличия.txt
+|
++---AddressUtil
+|       AddressUtil.h
+|       AddressUtil.vcxproj
+|       Base58.cpp
+|       hash.cpp
+|       Makefile
+|
++---AddrGen
+|       AddrGen.vcxproj
+|       main.cpp
+|       Makefile
+|
++---clKeyFinder
+|       clKeyFinder.vcxproj
+|
++---CLKeySearchDevice
+|       bitcrack.cl
+|       CLKeySearchDevice.cpp
+|       CLKeySearchDevice.h
+|       CLKeySearchDevice.vcxproj
+|       keysearch.cl
+|       Makefile
+|
++---clMath
+|       clMath.vcxproj
+|       ripemd160.cl
+|       secp256k1.cl
+|       sha256.cl
+|
++---CLUnitTests
+|       CLUnitTests.vcxproj
+|       main.cpp
+|       Makefile
+|       secp256k1test.cl
+|
++---clUtil
+|       clContext.cpp
+|       clContext.h
+|       clerrors.cpp
+|       clUtil.cpp
+|       clutil.h
+|       clUtil.vcxproj
+|       Makefile
+|
++---CmdParse
+|       CmdParse.cpp
+|       CmdParse.h
+|       CmdParse.vcxproj
+|       Makefile
+|
++---CryptoUtil
+|       checksum.cpp
+|       CryptoUtil.h
+|       CryptoUtil.vcxproj
+|       hash.cpp
+|       Makefile
+|       ripemd160.cpp
+|       Rng.cpp
+|       sha256.cpp
+|
++---cudaInfo
+|       cudaInfo.vcxproj
+|       main.cpp
+|       Makefile
+|
++---CudaKeySearchDevice
+|       CudaAtomicList.cu
+|       CudaAtomicList.cuh
+|       CudaAtomicList.h
+|       cudabridge.cu
+|       cudabridge.h
+|       CudaDeviceKeys.cu
+|       CudaDeviceKeys.cuh
+|       CudaDeviceKeys.h
+|       CudaHashLookup.cu
+|       CudaHashLookup.cuh
+|       CudaHashLookup.h
+|       CudaKeySearchDevice.cpp
+|       CudaKeySearchDevice.cu
+|       CudaKeySearchDevice.h
+|       CudaKeySearchDevice.vcxproj
+|       Makefile
+|
++---cudaMath
+|       cudaMath.vcxproj
+|       ptx.cuh
+|       ripemd160.cuh
+|       secp256k1.cuh
+|       sha256.cuh
+|
++---cudaUtil
+|       cudaUtil.cpp
+|       cudaUtil.h
+|       cudaUtil.vcxproj
+|       Makefile
+|
++---embedcl
+|       embedcl.vcxproj
+|       main.cpp
+|       Makefile
+|
++---KeyFinder
+|       ConfigFile.cpp
+|       ConfigFile.h
+|       DeviceManager.cpp
+|       DeviceManager.h
+|       KeyFinder.vcxproj
+|       main.cpp
+|       Makefile
+|
++---KeyFinderLib
+|       KeyFinder.cpp
+|       KeyFinder.h
+|       KeyFinderLib.vcxproj
+|       KeyFinderShared.h
+|       KeySearchDevice.h
+|       KeySearchTypes.h
+|       Makefile
+|
++---Logger
+|       Logger.cpp
+|       Logger.h
+|       Logger.vcxproj
+|       Makefile
+|
++---secp256k1lib
+|       Makefile
+|       secp256k1.cpp
+|       secp256k1.h
+|       secp256k1lib.vcxproj
+|
++---tools
+|       embedcl.exe
+|
+\---util
+        Makefile
+        util.cpp
+        util.h
+        util.vcxproj
