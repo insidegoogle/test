@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-echo [1/2] Склеиваю OpenCL ядра...
+echo [1/2] make OpenCL core...
 
 set CL_DIR=cl
 set OUTPUT=%CL_DIR%\bitcrack_combined.cl
@@ -14,7 +14,7 @@ type %CL_DIR%\sha256.cl >> %OUTPUT%
 type %CL_DIR%\secp256k1.cl >> %OUTPUT%
 type %CL_DIR%\keysearch.cl >> %OUTPUT%
 
-echo Готово: %OUTPUT%
+echo complid: %OUTPUT%
 echo.
 
 echo [2/2] Теперь нужно прогнать через embedcl
